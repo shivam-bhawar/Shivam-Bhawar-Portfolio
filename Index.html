@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		
+		<!-- Links to external CSS and JS Files -->
+		<link rel="stylesheet" href="Style.css">
+		<script src="Action.js"></script>
+		
+		<!-- Font for Welcome Screen Text -->
+		<link href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Press+Start+2P&display=swap" rel="stylesheet">
+		<!-- Link for using Google Icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+			
+		<title> Shivam Bhawar - Portfolio </title>
+		<link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/shivam-bhawar/Shivam-Bhawar-Portfolio/main/Image/Profile_Icon.png">
+	</head>
+	
+	<body>
+		<!-- Welcome Screen Background Overlay -->
+		<div id="overlay">
+			<div id="text-container">
+				<p id="welcome-text"></p>
+				<p id="sub-text"></p>
+				<button id="ready-btn" onclick="hideOverlay()" style="display: none;"> Ready </button>
+			</div>
+		</div>
+		
+		<!-- Background Music -->
+		<audio id="bg-audio" loop>
+		  <source src="https://raw.githubusercontent.com/shivam-bhawar/Shivam-Bhawar-Portfolio/main/Audio/Office%20-%20Background%20Sound.mp3">
+		</audio>
+
+		<!-- Spline 3D Scene -->
+		<div id="spline-container" style="position: relative;">
+			<script type="module" src="https://unpkg.com/@splinetool/viewer@1.10.53/build/spline-viewer.js"></script>
+			<spline-viewer url="https://prod.spline.design/Xak-mtQNBavVn299/scene.splinecode"></spline-viewer>
+						
+			<!-- Portfolio Instruction Pop-up Box -->
+			<div id="instruction-popup">
+				<div style="display: flex; justify-content: space-between; align-items: center;">
+					<p id="instruction-header" style="margin: 1%; padding: 2%;"> User Manual v6.0F2 </p>
+					<button id="collapse-btn" style="background: none; border: none; cursor: pointer;"> <span class="material-symbols-outlined"> disabled_by_default </span> </button>
+				</div>
+				
+				<div id="instruction-content"></div>
+			</div>	
+		</div>
+	</body>
+</html>
