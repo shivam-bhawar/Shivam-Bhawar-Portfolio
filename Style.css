@@ -33,7 +33,7 @@
 
 #welcome-text, #sub-text
 {
-	font-size: 1vw; 
+	font-size: 10%; 
 	line-height: 1.5;
 }
 
@@ -100,4 +100,5 @@
 	position: absolute;
 	top: 5px;
 	right: 0px;
+
 }
